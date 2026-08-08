@@ -1,0 +1,61 @@
+---
+sidebar_position: 1
+title: E-Commerce Database Schema
+sidebar_label: ER Schema
+---
+# Overzicht Architectuur
+
+Ontdek de architectuur van de **RV Waarloos website in minder dan 5 minuten**.
+
+## Entity-Relationship Diagram
+
+The diagram below maps out the `USERS`, `ORDERS`, `LINE_ITEMS`, and `PRODUCTS` tables, highlighting their exact semantic relationships.
+
+```mermaid
+erDiagram
+    USERS ||--o{ ORDERS : places
+    ORDERS ||--|{ LINE_ITEMS : contains
+    PRODUCTS ||--o{ LINE_ITEMS : ordered_in
+
+    USERS {
+        int id PK
+        string email
+        string password_hash
+        timestamp created_at
+    }
+
+    ORDERS {
+        int id PK
+        int user_id FK
+        string status
+        decimal total_amount
+        timestamp ordered_at
+    }
+
+    LINE_ITEMS {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        decimal unit_price
+    }
+
+    PRODUCTS {
+        int id PK
+        string name
+        string sku
+        decimal price
+        int stock_count
+    }
+```
+
+## Relationship Reference Legend
+
+When reading the Mermaid ER notation above, notice the specific cardinality markers:
+- `||--o{` represents a **One-to-Many** relationship (e.g., One user can place zero or many orders).
+- `||--|{` represents a **One-to-At-Least-One** relationship (e.g., An order must contain at least one line item).
+
+## Data Integrity Rules
+
+1. **Cascading Deletes:** If a `USER` account is deleted, all associated `ORDERS` are soft-deleted via an asynchronous cron job.
+2. **SKU Uniqueness:** The `sku` string field inside the `PRODUCTS` table enforces a strict unique database index constraint.
