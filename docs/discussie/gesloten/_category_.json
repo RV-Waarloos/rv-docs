@@ -1,0 +1,8 @@
+{
+    "label": "Gesloten Discussies",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "An automated overview page for files in this subfolder."
+    }
+}
