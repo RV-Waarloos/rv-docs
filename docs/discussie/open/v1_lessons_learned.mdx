@@ -1,0 +1,54 @@
+---
+sidebar_label: V1 Lessons Learned
+sidebar_position: 1
+---
+
+# V1 Lessons Learned
+
+## Hosting bij one.com
+
+### Uitrollen van de site
+
+Het uitollen van de site naar de hostingomgeving bij one.com verliep niet altijd vlekkeloos. Er waren enkele uitdagingen met betrekking tot de configuratie van de server en het instellen van de juiste bestandsrechten. Het is belangrijk om een gedetailleerde handleiding te hebben voor het uitrollen van de site, inclusief stappen voor het oplossen van veelvoorkomende problemen.
+
+Het gebruik van geautomatiseerde deployment tools kan het proces vereenvoudigen en de kans op fouten verminderen, maar is momenteel in de 'shared hosting' omgeving van one.com niet mogelijk. Het is daarom belangrijk om een goed begrip te hebben van de handmatige deployment stappen en eventuele valkuilen.
+
+### Uitvoeren van achtergrondtaken en geplande taken
+
+Het uitvoeren van achtergrondtaken en geplande taken op de hostingomgeving bij one.com is niet mogelijk. Dit kan een uitdaging zijn voor het uitvoeren van taken zoals het verzenden van e-mails, het genereren van rapporten of het uitvoeren van periodieke onderhoudstaken. Het is belangrijk om alternatieve oplossingen te overwegen, zoals het gebruik van externe services of het verplaatsen van de site naar een hostingomgeving die deze functionaliteit ondersteunt.
+
+Momenteel wordt er gebruik gemaakt van de externe service 'Cron-job.org' om geplande taken uit te voeren. Deze service kan worden gebruikt om HTTP-verzoeken naar de site te sturen op geplande tijdstippen, waardoor achtergrondtaken kunnen worden uitgevoerd. Het is belangrijk om ervoor te zorgen dat de site correct is geconfigureerd om deze verzoeken te verwerken en dat er voldoende logging en foutafhandeling is om eventuele problemen te identificeren en op te lossen.
+
+Vermits de taken binnen een bepaalde tijdspanne moeten worden uitgevoerd, is het belangrijk om ervoor te zorgen dat de site voldoende resources heeft om deze taken uit te voeren zonder de prestaties van de site te beïnvloeden. Het is ook belangrijk om ervoor te zorgen dat de taken correct zijn geconfigureerd en getest voordat ze in productie worden genomen.
+Wat praktisch onmogelijk is.
+
+## Upgraden van de site
+
+### Afhankelijkheden van externe libraries
+
+Voor de backend (laravel) zijn er 52 directe en 140 indirecte afhankelijkheden van externe libraries. Het is belangrijk om een goed begrip te hebben van deze afhankelijkheden en hun impact op de site, vooral bij het upgraden van de site naar nieuwe versies van de gebruikte libraries.
+Het upgraden van de site kan leiden tot compatibiliteitsproblemen met bestaande code en functionaliteit. Het is belangrijk om een gedetailleerd upgradeplan te hebben, inclusief stappen voor het testen en valideren van de site na het upgraden van de afhankelijkheden. Het is ook belangrijk om een rollback-plan te hebben voor het geval er problemen optreden tijdens het upgraden van de site.
+
+Op dit moment is het door comptibileitsproblemen onmogelijk om de site nog up te graden.
+
+## Gebruiksvriendelijkheid van de site
+
+### Aanmelden
+
+### Home pagina's
+
+
+## Organisatie van de site
+
+### Opdeling in frontend en backend
+
+### Beveiliging van de site
+
+### Beheer van de site
+
+### Toegangsrechten en rollen
+
+## Probleem opvolging
+Er is op dit ogenblik geen ticketing systeem waarmee gebruikers problemen kunnen melden en feedback kunnen krijgen.
+
+Eveneens is er geen mogelijkheid om de performance van de site op te volgen. Dit komt ook door de onmogelijkheid om achtergrond taken uit te voeren.
