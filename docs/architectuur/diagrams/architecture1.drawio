@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="SH0W0e4jfZRaw3PI3dZQ">
+        <mxGraphModel dx="2685" dy="1875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Pa9TCzgNcrYsp0Pe9W4p-1" value="Central" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="240" width="52.5" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pa9TCzgNcrYsp0Pe9W4p-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Pa9TCzgNcrYsp0Pe9W4p-4" target="Pa9TCzgNcrYsp0Pe9W4p-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pa9TCzgNcrYsp0Pe9W4p-4" value="Auth" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="249" width="65" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="Pa9TCzgNcrYsp0Pe9W4p-7" target="Pa9TCzgNcrYsp0Pe9W4p-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pa9TCzgNcrYsp0Pe9W4p-7" value="Rv" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="360" width="65" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="Pa9TCzgNcrYsp0Pe9W4p-8" target="Pa9TCzgNcrYsp0Pe9W4p-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="Pa9TCzgNcrYsp0Pe9W4p-8" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pa9TCzgNcrYsp0Pe9W4p-8" value="Wt" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="471" width="65" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Wt" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="510" width="48" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Crds" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="600" width="65" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="6" target="Pa9TCzgNcrYsp0Pe9W4p-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Crds" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="652" width="48" height="64" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

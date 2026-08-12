@@ -1,0 +1,8 @@
+{
+    "label": "AI Agent Discussies",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "An automated overview page for files in this subfolder."
+    }
+}

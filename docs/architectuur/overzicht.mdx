@@ -3,6 +3,10 @@ sidebar_position: 1
 title: E-Commerce Database Schema
 sidebar_label: ER Schema
 ---
+
+import Drawio from '@theme/Drawio';
+import myGraph from '!!raw-loader!./diagrams/architecture1.drawio';
+
 # Overzicht Architectuur
 
 Ontdek de architectuur van de **RV Waarloos website in minder dan 5 minuten**.
@@ -59,3 +63,6 @@ When reading the Mermaid ER notation above, notice the specific cardinality mark
 
 1. **Cascading Deletes:** If a `USER` account is deleted, all associated `ORDERS` are soft-deleted via an asynchronous cron job.
 2. **SKU Uniqueness:** The `sku` string field inside the `PRODUCTS` table enforces a strict unique database index constraint.
+
+
+<Drawio content={myGraph} />
