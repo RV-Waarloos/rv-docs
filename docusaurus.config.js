@@ -23,7 +23,8 @@ const config = {
   url: 'http://club.rv.laravel',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/rvdocs/',
+  // baseUrl: '/rvdocs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
